@@ -1,0 +1,2068 @@
+version 2
+run General-0-20171024-21:05:21-12491
+attr configname General
+attr datetime 20171024-21:05:21
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TTEtherSim
+attr processid 12491
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.ICP.app[0].action_time 12250tick
+param **.ICP.app[0].buffers "\"vl_100\""
+param **.ICP.app[0].ct_id 100
+param **.ICP.app[0].typename "\"TicApp\""
+param **.ICP.numApps 1
+param **.ICP.phy[*].mac.address "\"0A-00-00-00-00-01\""
+param **.ICP.phy[0].inControl.ct_incomings "\"vl_101_ctc\""
+param **.ICP.phy[0].shaper.tt_buffers "\"vl_100\""
+param **.ICP.vl_100.ct_id 100
+param **.ICP.vl_100.destination_gates "\"phy[0].TTin\""
+param **.ICP.vl_100.sendWindowStart 12500tick
+param **.ICP.vl_100_ctc.permanence_pit 12375tick
+param **.ICP.vl_100_ctc.receive_window_end 12375tick
+param **.ICP.vl_100_ctc.receive_window_start 12125tick
+param **.ICP.vl_101.ct_id 101
+param **.ICP.vl_101.destination_gates "\"app[0].RCin\""
+param **.client1.app[0].buffers "\"vl_101\""
+param **.client1.app[0].ct_id 101
+param **.client1.app[0].typename "\"TocApp\""
+param **.client1.numApps 1
+param **.client1.phy[*].mac.address "\"0A-00-00-00-00-02\""
+param **.client1.phy[0].inControl.ct_incomings "\"vl_100_ctc\""
+param **.client1.vl_100.ct_id 100
+param **.client1.vl_100.destination_gates "\"app[0].TTin\""
+param **.client1.vl_100.sendWindowStart 13500tick
+param **.client1.vl_100_ctc.permanence_pit 13000tick
+param **.client1.vl_100_ctc.receive_window_end 13000tick
+param **.client1.vl_100_ctc.receive_window_start 12750tick
+param **.client1.vl_101.ct_id 101
+param **.client1.vl_101.destination_gates "\"phy[0].RCin\""
+param **.ct_marker 0x03040506
+param **.ct_mask -1
+param **.precission 500ns
+param **.scheduler.cycle_ticks 62500tick
+param **.scheduler.drift_change uniform(-10ps,10ps)
+param **.scheduler.max_drift 2ps
+param **.scheduler.tick 80ns
+param **.switch.phy[0].inControl.ct_incomings "\"vl_100_ctc\""
+param **.switch.phy[1].inControl.ct_incomings "\"vl_101_ctc\""
+param **.switch.phy[1].shaper.tt_buffers "\"vl_100\""
+param **.switch.vl_100.ct_id 100
+param **.switch.vl_100.destination_gates "\"phy[1].TTin\""
+param **.switch.vl_100.sendWindowStart 12812tick
+param **.switch.vl_100_ctc.permanence_pit 12689tick
+param **.switch.vl_100_ctc.receive_window_end 12689tick
+param **.switch.vl_100_ctc.receive_window_start 12439tick
+param **.switch.vl_101.ct_id 101
+param **.switch.vl_101.destination_gates "\"phy[0].RCin\""
+
+statistic TTEtherSim.ICP.phy[0].shaper 	rc9QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc9QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc8QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc8QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc7QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc7QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc6QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc6QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc5QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc5QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc4QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc4QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc3QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc3QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc2QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc2QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc1QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc1QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	rc0QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	rc0QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	beQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	beQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	pcfQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.ICP.phy[0].shaper 	pcfQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].shaper 	ttQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.ICP.phy[0].inControl 	dropped:count 	0
+attr interpolationmode  none
+attr source  droppedPk
+attr title  "Unconfigured CT dropped, count"
+attr unit  packets
+statistic TTEtherSim.ICP.phy[0].inControl 	rxLatency:stats
+field count 6
+field mean 1.967e-05
+field stddev 0
+field sum 0.00011802
+field sqrsum 2.3214534e-09
+field min 1.967e-05
+field max 1.967e-05
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), stats"
+attr unit  s
+scalar TTEtherSim.ICP.phy[0].mac 	"simulated time" 	0.019005943952
+scalar TTEtherSim.ICP.phy[0].mac 	full-duplex 	1
+scalar TTEtherSim.ICP.phy[0].mac 	"frames/sec sent" 	368.30583199018
+scalar TTEtherSim.ICP.phy[0].mac 	"frames/sec rcvd" 	315.69071313444
+scalar TTEtherSim.ICP.phy[0].mac 	"bits/sec sent" 	188572.58597897
+scalar TTEtherSim.ICP.phy[0].mac 	"bits/sec rcvd" 	161633.64512483
+scalar TTEtherSim.ICP.phy[0].mac 	"rx channel idle (%)" 	99.818162149235
+scalar TTEtherSim.ICP.phy[0].mac 	"rx channel utilization (%)" 	0.18183785076544
+scalar TTEtherSim.ICP.phy[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar TTEtherSim.ICP.phy[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar TTEtherSim.ICP.phy[0].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar TTEtherSim.ICP.phy[0].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar TTEtherSim.ICP.phy[0].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar TTEtherSim.ICP.phy[0].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar TTEtherSim.ICP.phy[0].mac 	rxPkFromHL:count 	7
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar TTEtherSim.ICP.phy[0].mac 	rxPkFromHL:sum(packetBytes) 	448
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar TTEtherSim.ICP.phy[0].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar TTEtherSim.ICP.phy[0].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar TTEtherSim.ICP.phy[0].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar TTEtherSim.ICP.phy[0].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar TTEtherSim.ICP.phy[0].mac 	rxPkOk:count 	6
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar TTEtherSim.ICP.phy[0].mac 	rxPkOk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar TTEtherSim.ICP.phy[0].mac 	txPk:count 	7
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar TTEtherSim.ICP.phy[0].mac 	txPk:sum(packetBytes) 	448
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar TTEtherSim.ICP.phy[0].mac 	passedUpPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar TTEtherSim.ICP.phy[0].mac 	passedUpPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar TTEtherSim.ICP.encap 	pauseSent:count 	0
+attr title  "pause sent, count"
+scalar TTEtherSim.ICP.encap 	pauseSent:sum 	0
+attr title  "pause sent, sum"
+scalar TTEtherSim.ICP.encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar TTEtherSim.ICP.encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar TTEtherSim.ICP.encap 	encapPk:count 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar TTEtherSim.ICP.encap 	encapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar TTEtherSim.ICP.scheduler.period[0] 	numberOfCycles:count 	6
+attr interpolationmode  none
+attr source  newCycle
+attr title  "Number of cycle, count"
+statistic TTEtherSim.ICP.app[0] 	roundtrip:stats
+field count 1
+field mean -0.00011974
+field stddev -nan
+field sum -0.00011974
+field sqrsum 1.43376676e-08
+field min -0.00011974
+field max -0.00011974
+attr title  "Roundtrip time, stats"
+attr unit  s
+scalar TTEtherSim.ICP.app[0] 	rxPk:count 	1
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.app[0] 	rxBytes:sum(packetBytes) 	18
+attr interpolationmode  none
+attr source  rxPk
+attr title  "Received Bytes, sum(packetBytes)"
+attr unit  B
+scalar TTEtherSim.ICP.bgIn 	dropped:sum 	0
+attr source  dropped
+attr title  "Dropped frames, sum"
+attr unit  packets
+scalar TTEtherSim.ICP.bgIn 	rxPk:count 	0
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.bgIn 	txPk:count 	0
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.bgIn 	txBytes:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.ICP.bgIn 	txLatency:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.ICP.bgOut 	dropped:sum 	0
+attr source  dropped
+attr title  "Dropped frames, sum"
+attr unit  packets
+scalar TTEtherSim.ICP.bgOut 	rxPk:count 	0
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.bgOut 	txPk:count 	0
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.bgOut 	txBytes:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.ICP.bgOut 	txLatency:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.ICP.vl_100_ctc 	dropped:count 	0
+attr source  droppedPk
+attr title  "Packets Dropped, count"
+scalar TTEtherSim.ICP.vl_100_ctc 	rxPk:count 	7
+attr source  rxPk
+attr title  "Received Packets, count"
+statistic TTEtherSim.ICP.vl_100_ctc 	latency:stats
+field count 7
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, stats"
+attr unit  s
+scalar TTEtherSim.ICP.vl_100 	rxPk:count 	7
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.vl_100 	txPk:count 	7
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.vl_100 	txBytes:sum(packetBytes) 	448
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.ICP.vl_100 	txLatency:stats
+field count 7
+field mean 2.0000035714286e-05
+field stddev 1.7251634562539e-10
+field sum 0.00014000025
+field sqrsum 2.8000100001875e-09
+field min 1.999975e-05
+field max 2.000025e-05
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.ICP.vl_101_ctc 	dropped:count 	0
+attr source  droppedPk
+attr title  "Packets Dropped, count"
+scalar TTEtherSim.ICP.vl_101_ctc 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+statistic TTEtherSim.ICP.vl_101_ctc 	latency:stats
+field count 6
+field mean 1.967e-05
+field stddev 0
+field sum 0.00011802
+field sqrsum 2.3214534e-09
+field min 1.967e-05
+field max 1.967e-05
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, stats"
+attr unit  s
+scalar TTEtherSim.ICP.vl_101 	dropped:count 	0
+attr source  dropped
+attr title  "Dropped packets, count"
+attr unit  packets
+statistic TTEtherSim.ICP.vl_101 	size:stats
+field count 7
+field mean 146.28571428571
+field stddev 115.16613258783
+field sum 1024
+field sqrsum 229376
+field min 0
+field max 320
+attr interpolationmode  sample-hold
+attr source  size
+attr title  "Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.ICP.vl_101 	length:stats
+field count 7
+field mean 2.2857142857143
+field stddev 1.7994708216849
+field sum 16
+field sqrsum 56
+field min 0
+field max 5
+attr interpolationmode  sample-hold
+attr source  length
+attr title  "Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.ICP.vl_101 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.vl_101 	txPk:count 	1
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.ICP.vl_101 	txBytes:sum(packetBytes) 	64
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.ICP.vl_101 	txLatency:stats
+field count 1
+field mean 1.967e-05
+field stddev -nan
+field sum 1.967e-05
+field sqrsum 3.869089e-10
+field min 1.967e-05
+field max 1.967e-05
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+statistic TTEtherSim.client1.phy[0].shaper 	rc9QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc9QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc8QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc8QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc7QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc7QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc6QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc6QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc5QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc5QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc4QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc4QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc3QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc3QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc2QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc2QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc1QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc1QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	rc0QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	rc0QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	beQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	beQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	pcfQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.client1.phy[0].shaper 	pcfQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].shaper 	ttQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.client1.phy[0].inControl 	dropped:count 	0
+attr interpolationmode  none
+attr source  droppedPk
+attr title  "Unconfigured CT dropped, count"
+attr unit  packets
+statistic TTEtherSim.client1.phy[0].inControl 	rxLatency:stats
+field count 6
+field mean 5.07768295e-05
+field stddev 1.1771333386422e-07
+field sum 0.000304660977
+field sqrsum 1.5469787766577e-08
+field min 5.063e-05
+field max 5.087025e-05
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), stats"
+attr unit  s
+scalar TTEtherSim.client1.phy[0].mac 	"simulated time" 	0.019005943952
+scalar TTEtherSim.client1.phy[0].mac 	full-duplex 	1
+scalar TTEtherSim.client1.phy[0].mac 	"frames/sec sent" 	315.69071313444
+scalar TTEtherSim.client1.phy[0].mac 	"frames/sec rcvd" 	315.69071313444
+scalar TTEtherSim.client1.phy[0].mac 	"bits/sec sent" 	161633.64512483
+scalar TTEtherSim.client1.phy[0].mac 	"bits/sec rcvd" 	161633.64512483
+scalar TTEtherSim.client1.phy[0].mac 	"rx channel idle (%)" 	99.818162149235
+scalar TTEtherSim.client1.phy[0].mac 	"rx channel utilization (%)" 	0.18183785076544
+scalar TTEtherSim.client1.phy[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar TTEtherSim.client1.phy[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar TTEtherSim.client1.phy[0].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar TTEtherSim.client1.phy[0].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar TTEtherSim.client1.phy[0].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar TTEtherSim.client1.phy[0].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar TTEtherSim.client1.phy[0].mac 	rxPkFromHL:count 	6
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar TTEtherSim.client1.phy[0].mac 	rxPkFromHL:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar TTEtherSim.client1.phy[0].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar TTEtherSim.client1.phy[0].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar TTEtherSim.client1.phy[0].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar TTEtherSim.client1.phy[0].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar TTEtherSim.client1.phy[0].mac 	rxPkOk:count 	6
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar TTEtherSim.client1.phy[0].mac 	rxPkOk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar TTEtherSim.client1.phy[0].mac 	txPk:count 	6
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar TTEtherSim.client1.phy[0].mac 	txPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar TTEtherSim.client1.phy[0].mac 	passedUpPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar TTEtherSim.client1.phy[0].mac 	passedUpPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar TTEtherSim.client1.encap 	pauseSent:count 	0
+attr title  "pause sent, count"
+scalar TTEtherSim.client1.encap 	pauseSent:sum 	0
+attr title  "pause sent, sum"
+scalar TTEtherSim.client1.encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar TTEtherSim.client1.encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar TTEtherSim.client1.encap 	encapPk:count 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar TTEtherSim.client1.encap 	encapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar TTEtherSim.client1.scheduler.period[0] 	numberOfCycles:count 	6
+attr interpolationmode  none
+attr source  newCycle
+attr title  "Number of cycle, count"
+scalar TTEtherSim.client1.bgIn 	dropped:sum 	0
+attr source  dropped
+attr title  "Dropped frames, sum"
+attr unit  packets
+scalar TTEtherSim.client1.bgIn 	rxPk:count 	0
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.bgIn 	txPk:count 	0
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.bgIn 	txBytes:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.client1.bgIn 	txLatency:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.client1.bgOut 	dropped:sum 	0
+attr source  dropped
+attr title  "Dropped frames, sum"
+attr unit  packets
+scalar TTEtherSim.client1.bgOut 	rxPk:count 	0
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.bgOut 	txPk:count 	0
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.bgOut 	txBytes:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.client1.bgOut 	txLatency:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.client1.vl_100_ctc 	dropped:count 	0
+attr source  droppedPk
+attr title  "Packets Dropped, count"
+scalar TTEtherSim.client1.vl_100_ctc 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+statistic TTEtherSim.client1.vl_100_ctc 	latency:stats
+field count 6
+field mean 5.07768295e-05
+field stddev 1.1771333386422e-07
+field sum 0.000304660977
+field sqrsum 1.5469787766577e-08
+field min 5.063e-05
+field max 5.087025e-05
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, stats"
+attr unit  s
+scalar TTEtherSim.client1.vl_100 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.vl_100 	txPk:count 	6
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.vl_100 	txBytes:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.client1.vl_100 	txLatency:stats
+field count 6
+field mean 9.9990572166667e-05
+field stddev 1.5982274161978e-07
+field sum 0.000599943433
+field sqrsum 5.9988814849848e-08
+field min 9.9751462e-05
+field max 0.000100230867
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.client1.vl_101_ctc 	dropped:count 	0
+attr source  droppedPk
+attr title  "Packets Dropped, count"
+scalar TTEtherSim.client1.vl_101_ctc 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+statistic TTEtherSim.client1.vl_101_ctc 	latency:stats
+field count 6
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, stats"
+attr unit  s
+scalar TTEtherSim.client1.vl_101 	dropped:count 	0
+attr source  dropped
+attr title  "Dropped packets, count"
+attr unit  packets
+statistic TTEtherSim.client1.vl_101 	size:stats
+field count 12
+field mean 32
+field stddev 33.422909943494
+field sum 384
+field sqrsum 24576
+field min 0
+field max 64
+attr interpolationmode  sample-hold
+attr source  size
+attr title  "Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.client1.vl_101 	length:stats
+field count 12
+field mean 0.5
+field stddev 0.52223296786709
+field sum 6
+field sqrsum 6
+field min 0
+field max 1
+attr interpolationmode  sample-hold
+attr source  length
+attr title  "Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.client1.vl_101 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.vl_101 	txPk:count 	6
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.client1.vl_101 	txBytes:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.client1.vl_101 	txLatency:stats
+field count 6
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.switch.beswitch 	"processed frames" 	0
+scalar TTEtherSim.switch.beswitch 	"discarded frames" 	0
+statistic TTEtherSim.switch.phy[0].shaper 	rc9QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc9QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc8QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc8QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc7QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc7QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc6QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc6QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc5QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc5QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc4QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc4QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc3QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc3QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc2QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc2QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc1QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc1QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	rc0QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	rc0QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	beQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	beQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	pcfQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.switch.phy[0].shaper 	pcfQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].shaper 	ttQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.switch.phy[0].inControl 	dropped:count 	0
+attr interpolationmode  none
+attr source  droppedPk
+attr title  "Unconfigured CT dropped, count"
+attr unit  packets
+statistic TTEtherSim.switch.phy[0].inControl 	rxLatency:stats
+field count 6
+field mean 2.5810083333333e-05
+field stddev 1.2909956129363e-10
+field sum 0.0001548605
+field sqrsum 3.996962410125e-09
+field min 2.581e-05
+field max 2.581025e-05
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), stats"
+attr unit  s
+scalar TTEtherSim.switch.phy[0].mac 	"simulated time" 	0.019005943952
+scalar TTEtherSim.switch.phy[0].mac 	full-duplex 	1
+scalar TTEtherSim.switch.phy[0].mac 	"frames/sec sent" 	315.69071313444
+scalar TTEtherSim.switch.phy[0].mac 	"frames/sec rcvd" 	315.69071313444
+scalar TTEtherSim.switch.phy[0].mac 	"bits/sec sent" 	161633.64512483
+scalar TTEtherSim.switch.phy[0].mac 	"bits/sec rcvd" 	161633.64512483
+scalar TTEtherSim.switch.phy[0].mac 	"rx channel idle (%)" 	99.818162149235
+scalar TTEtherSim.switch.phy[0].mac 	"rx channel utilization (%)" 	0.18183785076544
+scalar TTEtherSim.switch.phy[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar TTEtherSim.switch.phy[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[0].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar TTEtherSim.switch.phy[0].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[0].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar TTEtherSim.switch.phy[0].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[0].mac 	rxPkFromHL:count 	6
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar TTEtherSim.switch.phy[0].mac 	rxPkFromHL:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[0].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar TTEtherSim.switch.phy[0].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar TTEtherSim.switch.phy[0].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar TTEtherSim.switch.phy[0].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar TTEtherSim.switch.phy[0].mac 	rxPkOk:count 	6
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar TTEtherSim.switch.phy[0].mac 	rxPkOk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[0].mac 	txPk:count 	6
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar TTEtherSim.switch.phy[0].mac 	txPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[0].mac 	passedUpPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar TTEtherSim.switch.phy[0].mac 	passedUpPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+statistic TTEtherSim.switch.phy[1].shaper 	rc9QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc9QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc8QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc8QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc7QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc7QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc6QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc6QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc5QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc5QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc4QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc4QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc3QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc3QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc2QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc2QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc1QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc1QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	rc0QueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	rc0QueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	beQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	beQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	pcfQueueSize:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.switch.phy[1].shaper 	pcfQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, stats"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].shaper 	ttQueueLength:stats
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.switch.phy[1].inControl 	dropped:count 	0
+attr interpolationmode  none
+attr source  droppedPk
+attr title  "Unconfigured CT dropped, count"
+attr unit  packets
+statistic TTEtherSim.switch.phy[1].inControl 	rxLatency:stats
+field count 6
+field mean 5.86e-06
+field stddev 0
+field sum 3.516e-05
+field sqrsum 2.060376e-10
+field min 5.86e-06
+field max 5.86e-06
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), stats"
+attr unit  s
+scalar TTEtherSim.switch.phy[1].mac 	"simulated time" 	0.019005943952
+scalar TTEtherSim.switch.phy[1].mac 	full-duplex 	1
+scalar TTEtherSim.switch.phy[1].mac 	"frames/sec sent" 	315.69071313444
+scalar TTEtherSim.switch.phy[1].mac 	"frames/sec rcvd" 	315.69071313444
+scalar TTEtherSim.switch.phy[1].mac 	"bits/sec sent" 	161633.64512483
+scalar TTEtherSim.switch.phy[1].mac 	"bits/sec rcvd" 	161633.64512483
+scalar TTEtherSim.switch.phy[1].mac 	"rx channel idle (%)" 	99.818162149235
+scalar TTEtherSim.switch.phy[1].mac 	"rx channel utilization (%)" 	0.18183785076544
+scalar TTEtherSim.switch.phy[1].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar TTEtherSim.switch.phy[1].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[1].mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar TTEtherSim.switch.phy[1].mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[1].mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar TTEtherSim.switch.phy[1].mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[1].mac 	rxPkFromHL:count 	6
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar TTEtherSim.switch.phy[1].mac 	rxPkFromHL:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[1].mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar TTEtherSim.switch.phy[1].mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar TTEtherSim.switch.phy[1].mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar TTEtherSim.switch.phy[1].mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar TTEtherSim.switch.phy[1].mac 	rxPkOk:count 	6
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar TTEtherSim.switch.phy[1].mac 	rxPkOk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[1].mac 	txPk:count 	6
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar TTEtherSim.switch.phy[1].mac 	txPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar TTEtherSim.switch.phy[1].mac 	passedUpPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar TTEtherSim.switch.phy[1].mac 	passedUpPk:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar TTEtherSim.switch.scheduler.period[0] 	numberOfCycles:count 	6
+attr interpolationmode  none
+attr source  newCycle
+attr title  "Number of cycle, count"
+scalar TTEtherSim.switch.vl_100_ctc 	dropped:count 	0
+attr source  droppedPk
+attr title  "Packets Dropped, count"
+scalar TTEtherSim.switch.vl_100_ctc 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+statistic TTEtherSim.switch.vl_100_ctc 	latency:stats
+field count 6
+field mean 2.5810083333333e-05
+field stddev 1.2909956129363e-10
+field sum 0.0001548605
+field sqrsum 3.996962410125e-09
+field min 2.581e-05
+field max 2.581025e-05
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, stats"
+attr unit  s
+scalar TTEtherSim.switch.vl_100 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.switch.vl_100 	txPk:count 	6
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.switch.vl_100 	txBytes:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.switch.vl_100 	txLatency:stats
+field count 6
+field mean 4.49168295e-05
+field stddev 1.1771333386563e-07
+field sum 0.000269500977
+field sqrsum 1.2105198716137e-08
+field min 4.477e-05
+field max 4.501025e-05
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s
+scalar TTEtherSim.switch.vl_101_ctc 	dropped:count 	0
+attr source  droppedPk
+attr title  "Packets Dropped, count"
+scalar TTEtherSim.switch.vl_101_ctc 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+statistic TTEtherSim.switch.vl_101_ctc 	latency:stats
+field count 6
+field mean 5.86e-06
+field stddev 0
+field sum 3.516e-05
+field sqrsum 2.060376e-10
+field min 5.86e-06
+field max 5.86e-06
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, stats"
+attr unit  s
+scalar TTEtherSim.switch.vl_101 	dropped:count 	0
+attr source  dropped
+attr title  "Dropped packets, count"
+attr unit  packets
+statistic TTEtherSim.switch.vl_101 	size:stats
+field count 12
+field mean 32
+field stddev 33.422909943494
+field sum 384
+field sqrsum 24576
+field min 0
+field max 64
+attr interpolationmode  sample-hold
+attr source  size
+attr title  "Queue Size, stats"
+attr unit  B
+statistic TTEtherSim.switch.vl_101 	length:stats
+field count 12
+field mean 0.5
+field stddev 0.52223296786709
+field sum 6
+field sqrsum 6
+field min 0
+field max 1
+attr interpolationmode  sample-hold
+attr source  length
+attr title  "Queue Length, stats"
+attr unit  packets
+scalar TTEtherSim.switch.vl_101 	rxPk:count 	6
+attr source  rxPk
+attr title  "Received Packets, count"
+attr unit  packets
+scalar TTEtherSim.switch.vl_101 	txPk:count 	6
+attr source  txPk
+attr title  "Transmitted Packets, count"
+attr unit  packets
+scalar TTEtherSim.switch.vl_101 	txBytes:sum(packetBytes) 	384
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, sum(packetBytes)"
+attr unit  B
+statistic TTEtherSim.switch.vl_101 	txLatency:stats
+field count 6
+field mean 1.386e-05
+field stddev 0
+field sum 8.316e-05
+field sqrsum 1.1525976e-09
+field min 1.386e-05
+field max 1.386e-05
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), stats"
+attr unit  s

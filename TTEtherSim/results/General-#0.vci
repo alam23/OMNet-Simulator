@@ -1,0 +1,848 @@
+file 36995 1508872090                                           
+version 2
+run General-0-20171024-21:05:21-12491
+attr configname General
+attr datetime 20171024-21:05:21
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TTEtherSim
+attr processid 12491
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.ICP.app[0].action_time 12250tick
+param **.ICP.app[0].buffers "\"vl_100\""
+param **.ICP.app[0].ct_id 100
+param **.ICP.app[0].typename "\"TicApp\""
+param **.ICP.numApps 1
+param **.ICP.phy[*].mac.address "\"0A-00-00-00-00-01\""
+param **.ICP.phy[0].inControl.ct_incomings "\"vl_101_ctc\""
+param **.ICP.phy[0].shaper.tt_buffers "\"vl_100\""
+param **.ICP.vl_100.ct_id 100
+param **.ICP.vl_100.destination_gates "\"phy[0].TTin\""
+param **.ICP.vl_100.sendWindowStart 12500tick
+param **.ICP.vl_100_ctc.permanence_pit 12375tick
+param **.ICP.vl_100_ctc.receive_window_end 12375tick
+param **.ICP.vl_100_ctc.receive_window_start 12125tick
+param **.ICP.vl_101.ct_id 101
+param **.ICP.vl_101.destination_gates "\"app[0].RCin\""
+param **.client1.app[0].buffers "\"vl_101\""
+param **.client1.app[0].ct_id 101
+param **.client1.app[0].typename "\"TocApp\""
+param **.client1.numApps 1
+param **.client1.phy[*].mac.address "\"0A-00-00-00-00-02\""
+param **.client1.phy[0].inControl.ct_incomings "\"vl_100_ctc\""
+param **.client1.vl_100.ct_id 100
+param **.client1.vl_100.destination_gates "\"app[0].TTin\""
+param **.client1.vl_100.sendWindowStart 13500tick
+param **.client1.vl_100_ctc.permanence_pit 13000tick
+param **.client1.vl_100_ctc.receive_window_end 13000tick
+param **.client1.vl_100_ctc.receive_window_start 12750tick
+param **.client1.vl_101.ct_id 101
+param **.client1.vl_101.destination_gates "\"phy[0].RCin\""
+param **.ct_marker 0x03040506
+param **.ct_mask -1
+param **.precission 500ns
+param **.scheduler.cycle_ticks 62500tick
+param **.scheduler.drift_change uniform(-10ps,10ps)
+param **.scheduler.max_drift 2ps
+param **.scheduler.tick 80ns
+param **.switch.phy[0].inControl.ct_incomings "\"vl_100_ctc\""
+param **.switch.phy[1].inControl.ct_incomings "\"vl_101_ctc\""
+param **.switch.phy[1].shaper.tt_buffers "\"vl_100\""
+param **.switch.vl_100.ct_id 100
+param **.switch.vl_100.destination_gates "\"phy[1].TTin\""
+param **.switch.vl_100.sendWindowStart 12812tick
+param **.switch.vl_100_ctc.permanence_pit 12689tick
+param **.switch.vl_100_ctc.receive_window_end 12689tick
+param **.switch.vl_100_ctc.receive_window_start 12439tick
+param **.switch.vl_101.ct_id 101
+param **.switch.vl_101.destination_gates "\"phy[0].RCin\""
+
+vector 0  TTEtherSim.ICP.phy[0].shaper  beQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, vector"
+attr unit  packets
+vector 1  TTEtherSim.ICP.phy[0].shaper  beQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 120  TTEtherSim.ICP.phy[0].shaper  rc0QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+vector 121  TTEtherSim.ICP.phy[0].shaper  rc0QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+vector 122  TTEtherSim.ICP.phy[0].shaper  rc1QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+vector 123  TTEtherSim.ICP.phy[0].shaper  rc1QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+vector 124  TTEtherSim.ICP.phy[0].shaper  rc2QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+vector 125  TTEtherSim.ICP.phy[0].shaper  rc2QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+vector 126  TTEtherSim.ICP.phy[0].shaper  rc3QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+vector 127  TTEtherSim.ICP.phy[0].shaper  rc3QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+vector 128  TTEtherSim.ICP.phy[0].shaper  rc4QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+vector 129  TTEtherSim.ICP.phy[0].shaper  rc4QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+vector 130  TTEtherSim.ICP.phy[0].shaper  rc5QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+vector 131  TTEtherSim.ICP.phy[0].shaper  rc5QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+vector 132  TTEtherSim.ICP.phy[0].shaper  rc6QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+vector 133  TTEtherSim.ICP.phy[0].shaper  rc6QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+vector 134  TTEtherSim.ICP.phy[0].shaper  rc7QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+vector 135  TTEtherSim.ICP.phy[0].shaper  rc7QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+vector 136  TTEtherSim.ICP.phy[0].shaper  rc8QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+vector 137  TTEtherSim.ICP.phy[0].shaper  rc8QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+vector 138  TTEtherSim.ICP.phy[0].shaper  rc9QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+vector 139  TTEtherSim.ICP.phy[0].shaper  rc9QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+vector 2  TTEtherSim.ICP.phy[0].shaper  pcfQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, vector"
+attr unit  packets
+vector 3  TTEtherSim.ICP.phy[0].shaper  pcfQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 4  TTEtherSim.ICP.phy[0].shaper  ttQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, vector"
+attr unit  packets
+vector 40  TTEtherSim.client1.phy[0].shaper  beQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, vector"
+attr unit  packets
+vector 41  TTEtherSim.client1.phy[0].shaper  beQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 140  TTEtherSim.client1.phy[0].shaper  rc0QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+vector 141  TTEtherSim.client1.phy[0].shaper  rc0QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+vector 142  TTEtherSim.client1.phy[0].shaper  rc1QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+vector 143  TTEtherSim.client1.phy[0].shaper  rc1QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+vector 144  TTEtherSim.client1.phy[0].shaper  rc2QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+vector 145  TTEtherSim.client1.phy[0].shaper  rc2QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+vector 146  TTEtherSim.client1.phy[0].shaper  rc3QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+vector 147  TTEtherSim.client1.phy[0].shaper  rc3QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+vector 148  TTEtherSim.client1.phy[0].shaper  rc4QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+vector 149  TTEtherSim.client1.phy[0].shaper  rc4QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+vector 150  TTEtherSim.client1.phy[0].shaper  rc5QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+vector 151  TTEtherSim.client1.phy[0].shaper  rc5QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+vector 152  TTEtherSim.client1.phy[0].shaper  rc6QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+vector 153  TTEtherSim.client1.phy[0].shaper  rc6QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+vector 154  TTEtherSim.client1.phy[0].shaper  rc7QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+vector 155  TTEtherSim.client1.phy[0].shaper  rc7QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+vector 156  TTEtherSim.client1.phy[0].shaper  rc8QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+vector 157  TTEtherSim.client1.phy[0].shaper  rc8QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+vector 158  TTEtherSim.client1.phy[0].shaper  rc9QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+vector 159  TTEtherSim.client1.phy[0].shaper  rc9QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+vector 42  TTEtherSim.client1.phy[0].shaper  pcfQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, vector"
+attr unit  packets
+vector 43  TTEtherSim.client1.phy[0].shaper  pcfQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 44  TTEtherSim.client1.phy[0].shaper  ttQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, vector"
+attr unit  packets
+vector 78  TTEtherSim.switch.phy[0].shaper  beQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, vector"
+attr unit  packets
+vector 79  TTEtherSim.switch.phy[0].shaper  beQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 160  TTEtherSim.switch.phy[0].shaper  rc0QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+vector 161  TTEtherSim.switch.phy[0].shaper  rc0QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+vector 162  TTEtherSim.switch.phy[0].shaper  rc1QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+vector 163  TTEtherSim.switch.phy[0].shaper  rc1QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+vector 164  TTEtherSim.switch.phy[0].shaper  rc2QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+vector 165  TTEtherSim.switch.phy[0].shaper  rc2QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+vector 166  TTEtherSim.switch.phy[0].shaper  rc3QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+vector 167  TTEtherSim.switch.phy[0].shaper  rc3QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+vector 168  TTEtherSim.switch.phy[0].shaper  rc4QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+vector 169  TTEtherSim.switch.phy[0].shaper  rc4QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+vector 170  TTEtherSim.switch.phy[0].shaper  rc5QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+vector 171  TTEtherSim.switch.phy[0].shaper  rc5QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+vector 172  TTEtherSim.switch.phy[0].shaper  rc6QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+vector 173  TTEtherSim.switch.phy[0].shaper  rc6QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+vector 174  TTEtherSim.switch.phy[0].shaper  rc7QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+vector 175  TTEtherSim.switch.phy[0].shaper  rc7QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+vector 176  TTEtherSim.switch.phy[0].shaper  rc8QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+vector 177  TTEtherSim.switch.phy[0].shaper  rc8QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+vector 178  TTEtherSim.switch.phy[0].shaper  rc9QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+vector 179  TTEtherSim.switch.phy[0].shaper  rc9QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+vector 80  TTEtherSim.switch.phy[0].shaper  pcfQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, vector"
+attr unit  packets
+vector 81  TTEtherSim.switch.phy[0].shaper  pcfQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 82  TTEtherSim.switch.phy[0].shaper  ttQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, vector"
+attr unit  packets
+vector 93  TTEtherSim.switch.phy[1].shaper  beQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Length, vector"
+attr unit  packets
+vector 94  TTEtherSim.switch.phy[1].shaper  beQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 180  TTEtherSim.switch.phy[1].shaper  rc0QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc0QueueLength)"
+attr unit  packets
+vector 181  TTEtherSim.switch.phy[1].shaper  rc0QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc0QueueSize)"
+attr unit  B
+vector 182  TTEtherSim.switch.phy[1].shaper  rc1QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc1QueueLength)"
+attr unit  packets
+vector 183  TTEtherSim.switch.phy[1].shaper  rc1QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc1QueueSize)"
+attr unit  B
+vector 184  TTEtherSim.switch.phy[1].shaper  rc2QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc2QueueLength)"
+attr unit  packets
+vector 185  TTEtherSim.switch.phy[1].shaper  rc2QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc2QueueSize)"
+attr unit  B
+vector 186  TTEtherSim.switch.phy[1].shaper  rc3QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc3QueueLength)"
+attr unit  packets
+vector 187  TTEtherSim.switch.phy[1].shaper  rc3QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc3QueueSize)"
+attr unit  B
+vector 188  TTEtherSim.switch.phy[1].shaper  rc4QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc4QueueLength)"
+attr unit  packets
+vector 189  TTEtherSim.switch.phy[1].shaper  rc4QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc4QueueSize)"
+attr unit  B
+vector 190  TTEtherSim.switch.phy[1].shaper  rc5QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc5QueueLength)"
+attr unit  packets
+vector 191  TTEtherSim.switch.phy[1].shaper  rc5QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc5QueueSize)"
+attr unit  B
+vector 192  TTEtherSim.switch.phy[1].shaper  rc6QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc6QueueLength)"
+attr unit  packets
+vector 193  TTEtherSim.switch.phy[1].shaper  rc6QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc6QueueSize)"
+attr unit  B
+vector 194  TTEtherSim.switch.phy[1].shaper  rc7QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc7QueueLength)"
+attr unit  packets
+vector 195  TTEtherSim.switch.phy[1].shaper  rc7QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc7QueueSize)"
+attr unit  B
+vector 196  TTEtherSim.switch.phy[1].shaper  rc8QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc8QueueLength)"
+attr unit  packets
+vector 197  TTEtherSim.switch.phy[1].shaper  rc8QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc8QueueSize)"
+attr unit  B
+vector 198  TTEtherSim.switch.phy[1].shaper  rc9QueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Length (rc9QueueLength)"
+attr unit  packets
+vector 199  TTEtherSim.switch.phy[1].shaper  rc9QueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "RC-Queue Size (rc9QueueSize)"
+attr unit  B
+vector 95  TTEtherSim.switch.phy[1].shaper  pcfQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "PCF-Queue Length, vector"
+attr unit  packets
+vector 96  TTEtherSim.switch.phy[1].shaper  pcfQueueSize:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "BE-Queue Size, vector"
+attr unit  B
+vector 97  TTEtherSim.switch.phy[1].shaper  ttQueueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "TT-Queue Length, vector"
+attr unit  packets
+vector 31  TTEtherSim.ICP.vl_100_ctc  latency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, vector"
+attr unit  s
+vector 32  TTEtherSim.ICP.vl_100  txBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, vector(packetBytes)"
+attr unit  B
+vector 33  TTEtherSim.ICP.vl_100  txLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), vector"
+attr unit  s
+vector 11  TTEtherSim.ICP.phy[0].mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 6  TTEtherSim.ICP.phy[0].mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 85  TTEtherSim.switch.phy[0].mac  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 86  TTEtherSim.switch.phy[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 83  TTEtherSim.switch.phy[0].inControl  rxLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), vector"
+attr unit  s
+vector 111  TTEtherSim.switch.vl_100_ctc  latency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, vector"
+attr unit  s
+vector 112  TTEtherSim.switch.vl_100  txBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, vector(packetBytes)"
+attr unit  B
+vector 113  TTEtherSim.switch.vl_100  txLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), vector"
+attr unit  s
+vector 104  TTEtherSim.switch.phy[1].mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 99  TTEtherSim.switch.phy[1].mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 47  TTEtherSim.client1.phy[0].mac  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 48  TTEtherSim.client1.phy[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 45  TTEtherSim.client1.phy[0].inControl  rxLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), vector"
+attr unit  s
+vector 69  TTEtherSim.client1.vl_100_ctc  latency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, vector"
+attr unit  s
+vector 70  TTEtherSim.client1.vl_100  txBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, vector(packetBytes)"
+attr unit  B
+vector 71  TTEtherSim.client1.vl_100  txLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), vector"
+attr unit  s
+vector 73  TTEtherSim.client1.vl_101_ctc  latency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, vector"
+attr unit  s
+vector 76  TTEtherSim.client1.vl_101  length:vector  ETV
+attr interpolationmode  sample-hold
+attr source  length
+attr title  "Queue Length, vector"
+attr unit  packets
+vector 77  TTEtherSim.client1.vl_101  size:vector  ETV
+attr interpolationmode  sample-hold
+attr source  size
+attr title  "Queue Size, vector"
+attr unit  B
+vector 74  TTEtherSim.client1.vl_101  txBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, vector(packetBytes)"
+attr unit  B
+vector 75  TTEtherSim.client1.vl_101  txLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), vector"
+attr unit  s
+vector 51  TTEtherSim.client1.phy[0].mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 46  TTEtherSim.client1.phy[0].mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 100  TTEtherSim.switch.phy[1].mac  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 101  TTEtherSim.switch.phy[1].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 98  TTEtherSim.switch.phy[1].inControl  rxLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), vector"
+attr unit  s
+vector 115  TTEtherSim.switch.vl_101_ctc  latency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, vector"
+attr unit  s
+vector 118  TTEtherSim.switch.vl_101  length:vector  ETV
+attr interpolationmode  sample-hold
+attr source  length
+attr title  "Queue Length, vector"
+attr unit  packets
+vector 119  TTEtherSim.switch.vl_101  size:vector  ETV
+attr interpolationmode  sample-hold
+attr source  size
+attr title  "Queue Size, vector"
+attr unit  B
+vector 116  TTEtherSim.switch.vl_101  txBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, vector(packetBytes)"
+attr unit  B
+vector 117  TTEtherSim.switch.vl_101  txLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), vector"
+attr unit  s
+vector 89  TTEtherSim.switch.phy[0].mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 84  TTEtherSim.switch.phy[0].mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 7  TTEtherSim.ICP.phy[0].mac  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 8  TTEtherSim.ICP.phy[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 5  TTEtherSim.ICP.phy[0].inControl  rxLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency (received), vector"
+attr unit  s
+vector 35  TTEtherSim.ICP.vl_101_ctc  latency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rxPk)
+attr title  "End-to-end latency, vector"
+attr unit  s
+vector 38  TTEtherSim.ICP.vl_101  length:vector  ETV
+attr interpolationmode  sample-hold
+attr source  length
+attr title  "Queue Length, vector"
+attr unit  packets
+vector 39  TTEtherSim.ICP.vl_101  size:vector  ETV
+attr interpolationmode  sample-hold
+attr source  size
+attr title  "Queue Size, vector"
+attr unit  B
+vector 36  TTEtherSim.ICP.vl_101  txBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "Transmitted Bytes, vector(packetBytes)"
+attr unit  B
+vector 37  TTEtherSim.ICP.vl_101  txLatency:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(txPk)
+attr title  "End-to-end latency (transmitted), vector"
+attr unit  s
+vector 20  TTEtherSim.ICP.app[0]  rxBytes:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPk
+attr title  "Received Bytes, vector(packetBytes)"
+attr unit  B
+vector 21  TTEtherSim.ICP.app[0]  roundtrip:vector  ETV
+attr title  "Roundtrip time, vector"
+attr unit  s
+vector 19  TTEtherSim.ICP.scheduler.oscillator  currentDrift:vector  ETV
+attr title  "Current drift, vector"
+attr unit  s
+vector 18  TTEtherSim.ICP.scheduler.timer  clockCorrection:vector  ETV
+attr title  "Clock correction, vector"
+attr unit  tick
+vector 109  TTEtherSim.switch.scheduler.oscillator  currentDrift:vector  ETV
+attr title  "Current drift, vector"
+attr unit  s
+vector 108  TTEtherSim.switch.scheduler.timer  clockCorrection:vector  ETV
+attr title  "Clock correction, vector"
+attr unit  tick
+vector 59  TTEtherSim.client1.scheduler.oscillator  currentDrift:vector  ETV
+attr title  "Current drift, vector"
+attr unit  s
+vector 58  TTEtherSim.client1.scheduler.timer  clockCorrection:vector  ETV
+attr title  "Clock correction, vector"
+attr unit  tick
+0	28157 8 0 0 0 0 1 0 0 0 0
+1	28165 8 0 0 0 0 1 0 0 0 0
+2	28173 8 0 0 0 0 1 0 0 0 0
+3	28181 8 0 0 0 0 1 0 0 0 0
+4	28189 8 0 0 0 0 1 0 0 0 0
+5	28197 173 54 380 0.00109974 0.016099576461 6 1.967e-05 1.967e-05 0.00011802 2.3214534e-09
+6	28370 152 15 406 0.00100576 0.019005902499 7 64 64 448 28672
+7	28522 131 53 379 0.00109974 0.016099576461 6 64 64 384 24576
+8	28653 131 53 379 0.00109974 0.016099576461 6 64 64 384 24576
+11	28784 154 14 405 0.001 0.019000142499 7 64 64 448 28672
+18	28938 126 62 391 0.003 0.018000154999 6 -2 1 -1 7
+19	29064 137 61 390 0.003 0.018000154999 6 -1e-12 1e-12 1e-12 3e-24
+20	29201 20 57 57 0.00109974 0.00109974 1 18 18 18 324
+21	29221 29 57 57 0.00109974 0.00109974 1 -0.00011974 -0.00011974 -0.00011974 1.43376676e-08
+31	29250 149 7 398 0.00098 0.018980142749 7 0 0 0 0
+32	29399 154 12 403 0.001 0.019000142499 7 64 64 448 28672
+33	29553 196 12 403 0.001 0.019000142499 7 1.999975e-05 2.000025e-05 0.00014000025 2.8000100001875e-09
+35	29749 179 55 381 0.00109974 0.016099576461 6 1.967e-05 1.967e-05 0.00011802 2.3214534e-09
+36	29928 20 56 56 0.00109974 0.00109974 1 64 64 64 4096
+37	29948 27 56 56 0.00109974 0.00109974 1 1.967e-05 1.967e-05 1.967e-05 3.869089e-10
+38	29975 150 56 382 0.00109974 0.016099576461 7 0 5 16 56
+39	30125 160 56 382 0.00109974 0.016099576461 7 0 320 1024 229376
+40	30285 9 0 0 0 0 1 0 0 0 0
+41	30294 9 0 0 0 0 1 0 0 0 0
+42	30303 9 0 0 0 0 1 0 0 0 0
+43	30312 9 0 0 0 0 1 0 0 0 0
+44	30321 9 0 0 0 0 1 0 0 0 0
+45	30330 186 29 355 0.00103087 0.016031025239 6 5.063e-05 5.087025e-05 0.000304660977 1.5469787766577e-08
+46	30516 137 43 369 0.00108583 0.016085666461 6 64 64 384 24576
+47	30653 134 28 354 0.00103087 0.016031025239 6 64 64 384 24576
+48	30787 134 28 354 0.00103087 0.016031025239 6 64 64 384 24576
+51	30921 137 42 368 0.00108007 0.016079906461 6 64 64 384 24576
+58	31058 133 70 387 0.00300007 0.017999954461 6 -4 4 3 41
+59	31191 147 69 386 0.00300007 0.017999954461 6 0 2e-12 5e-12 7e-24
+69	31338 186 30 356 0.00103087 0.016031025239 6 5.063e-05 5.087025e-05 0.000304660977 1.5469787766577e-08
+70	31524 137 36 362 0.00108007 0.016079906461 6 64 64 384 24576
+71	31661 193 36 362 0.00108007 0.016079906461 6 9.9751462e-05 0.000100230867 0.000599943433 5.9988814849848e-08
+73	31854 131 38 364 0.00108007 0.016079906461 6 0 0 0 0
+74	31985 137 39 365 0.00108007 0.016079906461 6 64 64 384 24576
+75	32122 131 39 365 0.00108007 0.016079906461 6 0 0 0 0
+76	32253 262 39 365 0.00108007 0.016079906461 12 0 1 6 6
+77	32515 268 39 365 0.00108007 0.016079906461 12 0 64 384 24576
+78	32783 9 0 0 0 0 1 0 0 0 0
+79	32792 9 0 0 0 0 1 0 0 0 0
+80	32801 9 0 0 0 0 1 0 0 0 0
+81	32810 9 0 0 0 0 1 0 0 0 0
+82	32819 9 0 0 0 0 1 0 0 0 0
+83	32828 182 17 343 0.00100581 0.016005964999 6 2.581e-05 2.581025e-05 0.0001548605 3.996962410125e-09
+84	33010 137 52 378 0.00109969 0.016099526461 6 64 64 384 24576
+85	33147 134 16 342 0.00100581 0.016005964999 6 64 64 384 24576
+86	33281 134 16 342 0.00100581 0.016005964999 6 64 64 384 24576
+89	33415 137 51 377 0.00109393 0.016093766461 6 64 64 384 24576
+93	33552 9 0 0 0 0 1 0 0 0 0
+94	33561 9 0 0 0 0 1 0 0 0 0
+95	33570 9 0 0 0 0 1 0 0 0 0
+96	33579 9 0 0 0 0 1 0 0 0 0
+97	33588 9 0 0 0 0 1 0 0 0 0
+98	33597 173 45 371 0.00108593 0.016085766461 6 5.86e-06 5.86e-06 3.516e-05 2.060376e-10
+99	33770 134 27 353 0.00103077 0.016030925239 6 64 64 384 24576
+100	33904 143 44 370 0.00108593 0.016085766461 6 64 64 384 24576
+101	34047 143 44 370 0.00108593 0.016085766461 6 64 64 384 24576
+104	34190 140 26 352 0.00102501 0.016025165239 6 64 64 384 24576
+108	34330 137 66 395 0.00300005 0.018000229927 6 -3 5 4 56
+109	34467 147 65 394 0.00300005 0.018000229927 6 0 2e-12 4e-12 6e-24
+111	34614 188 18 344 0.00100581 0.016005964999 6 2.581e-05 2.581025e-05 0.0001548605 3.996962410125e-09
+112	34802 140 24 350 0.00102501 0.016025165239 6 64 64 384 24576
+113	34942 192 24 350 0.00102501 0.016025165239 6 4.477e-05 4.501025e-05 0.000269500977 1.2105198716137e-08
+115	35134 179 46 372 0.00108593 0.016085766461 6 5.86e-06 5.86e-06 3.516e-05 2.060376e-10
+116	35313 143 48 374 0.00109393 0.016093766461 6 64 64 384 24576
+117	35456 185 48 374 0.00109393 0.016093766461 6 1.386e-05 1.386e-05 8.316e-05 1.1525976e-09
+118	35641 274 48 374 0.00109393 0.016093766461 12 0 1 6 6
+119	35915 280 48 374 0.00109393 0.016093766461 12 0 64 384 24576
+120	36195 10 0 0 0 0 1 0 0 0 0
+121	36205 10 0 0 0 0 1 0 0 0 0
+122	36215 10 0 0 0 0 1 0 0 0 0
+123	36225 10 0 0 0 0 1 0 0 0 0
+124	36235 10 0 0 0 0 1 0 0 0 0
+125	36245 10 0 0 0 0 1 0 0 0 0
+126	36255 10 0 0 0 0 1 0 0 0 0
+127	36265 10 0 0 0 0 1 0 0 0 0
+128	36275 10 0 0 0 0 1 0 0 0 0
+129	36285 10 0 0 0 0 1 0 0 0 0
+130	36295 10 0 0 0 0 1 0 0 0 0
+131	36305 10 0 0 0 0 1 0 0 0 0
+132	36315 10 0 0 0 0 1 0 0 0 0
+133	36325 10 0 0 0 0 1 0 0 0 0
+134	36335 10 0 0 0 0 1 0 0 0 0
+135	36345 10 0 0 0 0 1 0 0 0 0
+136	36355 10 0 0 0 0 1 0 0 0 0
+137	36365 10 0 0 0 0 1 0 0 0 0
+138	36375 10 0 0 0 0 1 0 0 0 0
+139	36385 10 0 0 0 0 1 0 0 0 0
+140	36395 10 0 0 0 0 1 0 0 0 0
+141	36405 10 0 0 0 0 1 0 0 0 0
+142	36415 10 0 0 0 0 1 0 0 0 0
+143	36425 10 0 0 0 0 1 0 0 0 0
+144	36435 10 0 0 0 0 1 0 0 0 0
+145	36445 10 0 0 0 0 1 0 0 0 0
+146	36455 10 0 0 0 0 1 0 0 0 0
+147	36465 10 0 0 0 0 1 0 0 0 0
+148	36475 10 0 0 0 0 1 0 0 0 0
+149	36485 10 0 0 0 0 1 0 0 0 0
+150	36495 10 0 0 0 0 1 0 0 0 0
+151	36505 10 0 0 0 0 1 0 0 0 0
+152	36515 10 0 0 0 0 1 0 0 0 0
+153	36525 10 0 0 0 0 1 0 0 0 0
+154	36535 10 0 0 0 0 1 0 0 0 0
+155	36545 10 0 0 0 0 1 0 0 0 0
+156	36555 10 0 0 0 0 1 0 0 0 0
+157	36565 10 0 0 0 0 1 0 0 0 0
+158	36575 10 0 0 0 0 1 0 0 0 0
+159	36585 10 0 0 0 0 1 0 0 0 0
+160	36595 10 0 0 0 0 1 0 0 0 0
+161	36605 10 0 0 0 0 1 0 0 0 0
+162	36615 10 0 0 0 0 1 0 0 0 0
+163	36625 10 0 0 0 0 1 0 0 0 0
+164	36635 10 0 0 0 0 1 0 0 0 0
+165	36645 10 0 0 0 0 1 0 0 0 0
+166	36655 10 0 0 0 0 1 0 0 0 0
+167	36665 10 0 0 0 0 1 0 0 0 0
+168	36675 10 0 0 0 0 1 0 0 0 0
+169	36685 10 0 0 0 0 1 0 0 0 0
+170	36695 10 0 0 0 0 1 0 0 0 0
+171	36705 10 0 0 0 0 1 0 0 0 0
+172	36715 10 0 0 0 0 1 0 0 0 0
+173	36725 10 0 0 0 0 1 0 0 0 0
+174	36735 10 0 0 0 0 1 0 0 0 0
+175	36745 10 0 0 0 0 1 0 0 0 0
+176	36755 10 0 0 0 0 1 0 0 0 0
+177	36765 10 0 0 0 0 1 0 0 0 0
+178	36775 10 0 0 0 0 1 0 0 0 0
+179	36785 10 0 0 0 0 1 0 0 0 0
+180	36795 10 0 0 0 0 1 0 0 0 0
+181	36805 10 0 0 0 0 1 0 0 0 0
+182	36815 10 0 0 0 0 1 0 0 0 0
+183	36825 10 0 0 0 0 1 0 0 0 0
+184	36835 10 0 0 0 0 1 0 0 0 0
+185	36845 10 0 0 0 0 1 0 0 0 0
+186	36855 10 0 0 0 0 1 0 0 0 0
+187	36865 10 0 0 0 0 1 0 0 0 0
+188	36875 10 0 0 0 0 1 0 0 0 0
+189	36885 10 0 0 0 0 1 0 0 0 0
+190	36895 10 0 0 0 0 1 0 0 0 0
+191	36905 10 0 0 0 0 1 0 0 0 0
+192	36915 10 0 0 0 0 1 0 0 0 0
+193	36925 10 0 0 0 0 1 0 0 0 0
+194	36935 10 0 0 0 0 1 0 0 0 0
+195	36945 10 0 0 0 0 1 0 0 0 0
+196	36955 10 0 0 0 0 1 0 0 0 0
+197	36965 10 0 0 0 0 1 0 0 0 0
+198	36975 10 0 0 0 0 1 0 0 0 0
+199	36985 10 0 0 0 0 1 0 0 0 0
